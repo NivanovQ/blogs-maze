@@ -21,9 +21,8 @@ class LabyrinthController extends AbstractController
             throw new BadRequestException("Y is not set!");
         }
         $x = $json['x'];
-        $Y = $json['y'];
-        $x = 3;
-        $y = 2;
+        $y = $json['y'];
+
         if($x <= 0 || $y <= 0){
             throw new BadRequestException("Labyrinth squares should be positive numbers!");
         }
