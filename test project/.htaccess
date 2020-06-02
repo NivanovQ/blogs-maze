@@ -1,0 +1,6 @@
+RewriteEngine on
+#if url points to logs, pass it
+RewriteRule ^logs.php$ - [L]
+
+#if url contains api query, redirect to index.php front controller
+RewriteRule ^.*$ index.php [NC]
