@@ -1,0 +1,9 @@
+CREATE TABLE `blogs` (
+  `id` INT NOT NULL,
+  `title` VARCHAR(40) NOT NULL,
+  `description` VARCHAR(200) NOT NULL,
+  `image_url` VARCHAR(200) NOT NULL,
+  PRIMARY KEY (`id`));
+
+ALTER TABLE `blogs`
+CHANGE COLUMN `id` `id` INT(11) NOT NULL AUTO_INCREMENT ;
